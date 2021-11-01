@@ -22,6 +22,15 @@ class MiVentana(QMainWindow):
         self.tabla.setItem(0, 1, QTableWidgetItem("Sanchez"))
         self.tabla.setItem(0, 2, QTableWidgetItem("ps@mail.com"))
 
+        # Leer elemento de una fila/columna
+        print(self.tabla.item(0, 2).text())
+
+        # Cantidad de filas
+        filas = self.tabla.rowCount()
+
+        # Remover fila
+        self.tabla.removeRow(filanro)
+
 
 app = QApplication([])
 
